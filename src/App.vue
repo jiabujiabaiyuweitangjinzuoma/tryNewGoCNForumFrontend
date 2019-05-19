@@ -1,23 +1,33 @@
 <template>
     <div id="app">
-        <forum-header></forum-header>
+        <home></home>
 
-        <!-- <img src="./assets/logo.png">-->
-        <HelloWorld/>
+        <!--        <HelloWorld/>-->
     </div>
 </template>
 
 <script>
     import ForumHeader from './components/Header'
     import ForumFooter from './components/Footer'
-    import HelloWorld from './components/HelloWorld'
+    import TopMenu from './components/TopMenu'
+    import NavTab from './components/NavTab'
+    import Home from "./components/Home";
 
     export default {
         name: 'App',
+        data: function () {
+            return {}
+        },
         components: {
+            Home,
             ForumHeader,
             ForumFooter,
-            HelloWorld
+            TopMenu,
+            NavTab
+        },
+        created() {
+            let logoImg = "assets/logo.png";
+
         }
     }
 </script>

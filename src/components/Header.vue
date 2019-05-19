@@ -1,45 +1,79 @@
 <template>
-  <nav>
 
-  </nav>
+    <div class="forum-header">
 
+      <div>
+          <form class="aw-search-box">
+              <input type="text" placeholder="搜索话题/问题/人"/>
+
+          </form>
+      </div>
+
+        <ul class="aw-nav">
+            <li>
+                <a href="find-page">发现</a>
+
+            </li>
+            <li>
+                <a href="download">下载</a>
+
+            </li>
+
+        </ul>
+
+        <ul class="aw-user-nav">
+            <li>
+                <a href="register">注册</a>
+
+            </li>
+            <li>
+                <a href="login">登录</a>
+
+            </li>
+
+
+        </ul>
+
+    </div>
 
 
 </template>
 
 <script>
-  export default {
-    name: 'forum-header',
-    // props: {
-    //   headerTitle: {
-    //     type: String
-    //   }
-    // },
-    // data() {
-    //   return {
-    //     title: " demo header"
-    //   }
-    // },
-    // methods: {
-    //   changeTitle: function () {
-    //     // this.headerTitle = "header title changed, not footer header";
-    //     this.$emit("titleChanged", "这是参数: 子组件使用emit通过注册方法向父组件传值")
-    //   }
-    // }
-  }
+    export default {
+        name: 'forum-header',
+    }
+
+
 </script>
 
 
-<!--scoped 作用域-->
 <style scoped>
 
-  /* header { */
-    /* background: lightgreen;
-    padding: 10px; */
-  /* } */
+    .forum-header {
+    /*    display: flex;*/
 
-  /* h1 { */
-    /* color: #222;
-    text-align: center; */
-  /* } */
+        width: 1110px;
+        height: 52px;
+        margin-top: -60px;
+        background-color: #499ef3;
+    }
+
+
+    ul {
+        display: inline-block;
+    }
+    li {
+        display: inline-block;
+    }
+
+    a {
+        text-decoration: none /*删除a下划线*/
+    }
+
+    li{
+        list-style: none;
+    }
+
+
 </style>

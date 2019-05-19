@@ -1,12 +1,12 @@
 <template>
   <footer>
-    <p>{{copyright}} {{footerTitle}}</p>
+    <p>footer</p>
   </footer>
 </template>
 
 <script>
   export default {
-    name: 'app-footer',  // 这里是自定义标签
+    name: 'forum-footer',  // 这里是自定义标签
     props:{
       footerTitle:{
         type:String
