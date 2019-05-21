@@ -7,11 +7,7 @@
 </template>
 
 <script>
-    import ForumHeader from './components/Header'
-    import ForumFooter from './components/Footer'
-    import TopMenu from './components/TopMenu'
-    import NavTab from './components/NavTab'
-    import Home from "./components/Home";
+    import Home from "./views/Home";
 
     export default {
         name: 'App',
@@ -20,10 +16,6 @@
         },
         components: {
             Home,
-            ForumHeader,
-            ForumFooter,
-            TopMenu,
-            NavTab
         },
         created() {
             let logoImg = "assets/logo.png";
@@ -34,11 +26,32 @@
 
 <style>
     #app {
-        font-family: 'Avenir', Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-align: center;
-        color: #2c3e50;
-        margin-top: 60px;
+        /*font-family: 'Avenir', Helvetica, Arial, sans-serif;*/
+        /*-webkit-font-smoothing: antialiased;*/
+        /*-moz-osx-font-smoothing: grayscale;*/
+        /*text-align: center;*/
+        /*color: #2c3e50;*/
+        /*margin-top: 60px;*/
+
+
     }
+
+    /*!*全局文字颜色*!*/
+    /*.text-color-999, .aw-placeholder, .category dl dd span, .aw-search-dropdown-list li > span, .aw-search-dropdown-list li.question a span, .aw-side-bar dd, .aw-question-comment-box .aw-mod-head .aw-notopic-sort, .aw-question-edit .aw-mod-body .pull-right, .aw-common-list .aw-question-replay-count, .aw-question-tags a, .aw-feed-list .aw-upload-file-list a, .aw-agree-by .aw-agree-by-show, .aw-agree-by .aw-user-name, .aw-my-notifications .aw-mod-head h2 span, .aw-my-notifications .aw-mod-body ul li.active span, .aw-publish-title-dropdown p span, .aw-side-bar-mod-publish .aw-side-bar-mod-body p, .aw-side-bar-mod-topic-edit .aw-side-bar-mod-body p, .aw-new-message-tips .aw-mod-head .pull-right, .aw-new-message-tips-close span, .aw-mod-search-result .aw-search-result-tags, .aw-publish-box .aw-publish-box-supplement, .aw-first-login .aw-mod-head ul li.active em, .aw-first-login .aw-complete-data .aw-complete-data-img span{color:#999;}*/
+    /*.aw-text-color-666, .aw-dropdown-menu ul a, .alert, .aw-nav-tabs > li.active a, .aw-user-nav-dropdown .aw-dropdown-menu  li > a, .aw-search-dropdown-list li a, .aw-search-dropdown-list li.question a span.active, .aw-comment-list, .aw-question-edit .aw-mod-body, .aw-question-tags a:hover, .aw-topic-content .aw-topic-title, .aw-edit-topic:hover, .aw-mod-invite-friend .aw-invite-box p, .aw-tabs ul li a, .aw-footer, .aw-card-tips, .aw-mod-replay-box .aw-mod-head p label, .markItUpPreviewFrame, .aw-404-wrap p, .aw-ie6 .pull-right p{color:#666;}*/
+    /*.aw-common-list .aw-question-replay-count em, .markItUpPreviewFrame .title, h1, h2, h3{color: #333;}*/
+    /*.aw-message-tooltip, .aw-top-menu-wrap .aw-pulish a, .aw-nav-main li a,.aw-side-bar-mod-nav ul li a:hover, .aw-side-bar-mod-nav ul li a.active, .aw-common-list .aw-question-replay-count.active, .aw-first-login .aw-mod-head ul li em, .markItUpHeader ul ul a:hover{color:#fff;}*/
+    /*.aw-load-more-content.warmming{color:#999;}*/
+    /*.aw-text-color-red{color:red;}*/
+    /*.aw-placeholder{color: #999 !important;}*/
+    /*.aw-winner-replay{color:#1A9F00;}*/
+    /*.aw-dropdown-menu ul a:hover{color: #3887d2;}*/
+    /*.alert-danger, .alert-error{color:#B94A48;}*/
+    /*.aw-nav-tabs > li > a{color: #666;}*/
+    /*.aw-logo span{color: #CFF1FF;}*/
+    /*.category .title a{color: #17344A;}*/
+    /*.aw-nav-main li a:hover{color:#93E2F3;}*/
+    /*.aw-search-dropdown-list li a:hover{color: #005580;}*/
+    /*.aw-agree-by .aw-user-name{color: #999 !important;}*/
+    /*.aw-ie6 .pull-right h1 span{color: #c20200;}*/
 </style>

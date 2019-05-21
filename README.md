@@ -46,3 +46,16 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 作者：Yangyi
 链接：https://juejin.im/post/5933a0beac502e00689e277d
+
+安装 BootstrapVue
+cnpm install --save-dev  bootstrap-vue bootstrap 
+
+
+解决 postcss config not found
+    Made a new file in the root directory named postcss.config.js and added
+    
+    module.exports = {};
+    
+    Found this on the following post:
+    
+    https://stackoverflow.com/a/41758053/5350097
